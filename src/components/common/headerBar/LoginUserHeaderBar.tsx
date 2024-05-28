@@ -69,10 +69,10 @@ const LoginUserHeaderBar: React.FC<LoginUserHeaderBarProps> = ({
   ];
 
   return (
-    <div className="relative flex items-center space-x-30">
+    <div className="relative flex items-center space-x-10">
       <button
         type="button"
-        className="flex items-center space-x-10"
+        className="flex items-center"
         onClick={toggleDropdown}
       >
         <img
@@ -80,8 +80,8 @@ const LoginUserHeaderBar: React.FC<LoginUserHeaderBarProps> = ({
           alt="Profile"
           className="rounded-full cursor-pointer h-50 w-50"
         />
-        <span>{user.name}</span>
       </button>
+      <span>{user.name}</span>
       {userType === 'user' && (
         <button type="button" className="p-5 text-white bg-blue-500">
           장바구니
