@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from '@/pages/Login';
 import Main from '@/pages/Main';
-import CheckoutPage from '@/components/payments/CheckoutPage';
-import SuccessPage from '@/components/payments/SuccessPage';
-import FailPage from '@/components/payments/FailPage';
+import CheckoutPage from '@/pages/payments/CheckoutPage';
+import SuccessPage from '@/pages/payments/SuccessPage';
+import FailPage from '@/pages/payments/FailPage';
 import MyPage from '@/pages/MyPage';
 import Location from '@/pages/productRegist/location/Location';
 import Reservation from '@/pages/Reservation';
