@@ -38,7 +38,7 @@ const LoginUserHeaderBar: React.FC<LoginUserHeaderBarProps> = ({
   }, []);
 
   const user: User = {
-    name: '우리 이름~',
+    name: '김짱구',
     image:
       'https://i.pinimg.com/736x/53/7e/f5/537ef59499259ba707068742f91a10f8.jpg',
   };
@@ -90,15 +90,15 @@ const LoginUserHeaderBar: React.FC<LoginUserHeaderBarProps> = ({
       {isDropdownOpen && (
         <div
           ref={dropdownRef}
-          className="absolute bg-white border border-gray-300 rounded shadow-lg left-[-1rem] top-50"
-          style={{ marginLeft: 0 }}
+          className="absolute bg-white border border-gray-300 rounded shadow-lg top-[100%] mt-[1rem]"
+          style={{ marginLeft: '-1.5rem' }}
         >
-          <ul className="p-5">
+          <ul className="p-10">
             {menuItems.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className="p-2">
                 <button
                   type="button"
-                  className="w-full px-4 py-2 cursor-pointer hover:bg-gray-100"
+                  className="w-full p-4 cursor-pointer hover:bg-gray-100"
                   onClick={() => {
                     if (item.action) {
                       item.action();
