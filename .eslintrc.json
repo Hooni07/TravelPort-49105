@@ -47,7 +47,13 @@
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
   },
   "ignorePatterns": ["node_modules/", "*.config.js"]
 }
